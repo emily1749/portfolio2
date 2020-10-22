@@ -16,6 +16,9 @@ body {
   color: var(--main-font-color);
 }
 
+.span-highlight {
+  color: var(--highlight-color);
+}
 .transition-fade {
   opacity: 1;
   transition: 500ms;
@@ -72,6 +75,7 @@ h2 {
   top: 0px;
   padding: 0 10px;
   z-index: 3;
+  /*  */
 }
 
 .navbar ul {
@@ -93,6 +97,7 @@ h2 {
 
 .navbar .logo-name a {
   z-index: 6;
+  transition: 1s;
 }
 .main {
   display: flex;
@@ -162,7 +167,7 @@ h2 {
 .content h1 {
   position: absolute;
   font-weight: 800;
-  font-size: 5rem;
+  font-size: 6rem;
   left: 34%;
   transform: translate(-50%, -50%);
   letter-spacing: 0.2rem;
@@ -198,6 +203,7 @@ h2 {
   margin: 0 4%;
   height: 50%;
   text-align: left;
+  /* color: #fff; */
 }
 
 .content-AboutMe h1 {
@@ -354,4 +360,53 @@ h2 {
   right: 0%;
   background: var(--highlight-color);
   transition: 0.6s;
+}
+
+/* left bar transition in */
+/* 
+.main-transition {
+  animation: 1.4s ease-in 0s 1 barAnimation;
+}
+
+@keyframes barAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} */
+
+.navbar-animation,
+.main-animation {
+  /* visibility: hidden; */
+  /* animation-fill-mode: both; */
+  animation: 1.9s ease-in 0s 1 navbarAnimation;
+}
+
+@keyframes navbarAnimation {
+  0% {
+    opacity: 0;
+    /* transform: translateX(-100%); */
+  }
+  100% {
+    opacity: 1;
+    /* transform: translateX(0); */
+  }
+}
+
+.content-animate-in {
+  animation: 1s ease-in 0s 1 headerAnimation;
+}
+@keyframes headerAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
