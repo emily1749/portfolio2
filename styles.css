@@ -464,26 +464,67 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background: red;
+  /* background: red; */
   color: #fff;
 }
 .first-row, .second-row{
+  /* margin: 2px; */
   height: 50%;
   width: 100%;
 display: flex;
-background: green;
+/* background: green; */
 flex-direction: row;
 }
-.project-1{
-background:  url('./img/flight_analyzer.png') no-repeat center center/cover;
+
+.project{
+  margin: 3px;
+/* background-image:  url('./img/flight_analyzer.png'); */
+
+background-position: center;
+background-repeat:no-repeat;
+/* background-size: 100% 100%; */
+/* height: 300px; */
+ /* no-repeat center center/cover; */
+ background-size: contain;
 position: relative;
 }
+
+
+.project-1{
+  width: 33.33%;
+  background-image: url('./img/flight_analyzer.png');
+  background-color: #fff;
+}
+.project-2{
+  width: 33.33%;
+
+  background-image: url('./img/job_skills_data_sorting.png');
+  background-color:  #151525;;
+}
+
+.project-3{
+  width: 33.33%;
+
+  background-image: url('./img/hexagon_pathfinder.png');
+  background-color: #fff;
+}
+.project-4{
+  background-image: url('./img/job_data_api.png');
+  /* background-color: url('./img/scott-webb-OxHPDs4WV8Y-unsplash\ copy.jpg') */
+  background-color: rgba(120,120, 120, 0.9);
+}
+.project-5{
+  background-image: url("./img/conways_game_of_life.png");
+  background-color:#0b0c10;
+  /* linear-gradient(#1f2833, #0b0c10); */
+}
+
   .project-text{
   display: flex;
   height: 100%;
   width: 90%;
   flex-direction: column;
-  opacity: 0;
+  opacity: 1;
   color:#fff;
   font-size: 1rem;
   align-items: center;
@@ -492,7 +533,7 @@ position: relative;
   text-align: center;
 }
 .project-text:hover{
-  opacity: 1;
+  opacity: .1;
   transition: 1s;
 }
 .project-underline{
@@ -514,8 +555,8 @@ color:var(--highlight-color)
 }
 
 .overlay{
-background: rgba(0, 0, 0, 0.65);
-opacity: 0;
+background: rgba(0, 0, 0, 0.8);
+opacity: .9;
 position: relative;
 top: 0;
 left: 0;
@@ -529,18 +570,13 @@ transition: 1s;
 }
 .overlay:hover{
   /* background: rgba(0,0, 0, 0.1); */
-  opacity: 1;
+  opacity: .1;
   transition: 1s;
 }
-.project-2{
+/* .project-2{
 background: purple;
-}
-.project-3{
-background: blue;
-}
-.project-4{
-background: blue;
-}
+} */
+
 /* .se */
 
 
