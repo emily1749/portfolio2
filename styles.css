@@ -3,11 +3,13 @@
   padding: 0;
   color: (var(--main-font-color));
 }
-
+p {
+  font-family: 'Montserrat', sans-serif;}
 :root {
   --main-font-color: #555;
   --main-bg: #e6dbc9;
   --highlight-color: #dcae1d;
+  --dark-highlight-color: #a18117;
 }
 body {
   overflow-x: hidden;
@@ -104,6 +106,7 @@ h2 {
   height: 100vh;
   position: fixed;
   z-index: 3;
+  width: 120px;
   /* top: 5%; */
 }
 /* mail side bar */
@@ -130,6 +133,7 @@ h2 {
   /* height: 150px; */
 }
 
+
 .mail-bar-1,
 .mail-bar-2 {
   background: var(--main-font-color);
@@ -137,17 +141,52 @@ h2 {
   width: 1px;
 }
 
+.content-container{
+  position: relative;
+  /* position: fixed; */
+  height: 100vh;
+  /* width: 100vw; */
+  top: 70px;
+  left: 120px;
+  height: calc(100vh - 140px);
+  width: calc(100vw - 200px);
+  background: pink;
+}
 .content {
-  /* z-index: -1; */
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: space-around;
   text-align: center;
-  height: 100vh;
-  width: 90vw;
-  padding: 0 100px;
+  height: 100%;
+  width: 100%;
 }
+
+
+
+
+/* .main {
+  display: flex;
+  height: 100vh;
+  position: fixed;
+  z-index: 3;
+  width: 120px;
+} */
+
+
+/* .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--main-font-color);
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0px;
+  padding: 0 10px;
+  z-index: 3;
+} */
 
 /* .content .name-border {
     display: block;
@@ -165,11 +204,14 @@ h2 {
     margin: 20px auto;
   } */
 .content h1 {
-  position: absolute;
+  position: fixed;
   font-weight: 800;
   font-size: 6rem;
-  left: 34%;
-  transform: translate(-50%, -50%);
+  left: 20%;
+  bottom: 50%;
+  /* left: 34%; */
+  /* transform: translate(-10%, -50%); */
+  /* left: -5%; */
   letter-spacing: 0.2rem;
 }
 
@@ -410,3 +452,97 @@ h2 {
     transform: translateX(0);
   }
 }
+
+/* projects */
+
+.container-projects{
+  position: relative;
+  top: 30px;
+  height: calc(100vh - 200px);
+  width: calc(100vw - 200px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: red;
+  color: #fff;
+}
+.first-row, .second-row{
+  height: 50%;
+  width: 100%;
+display: flex;
+background: green;
+flex-direction: row;
+}
+.project-1{
+background:  url('./img/flight_analyzer.png') no-repeat center center/cover;
+position: relative;
+}
+  .project-text{
+  display: flex;
+  height: 100%;
+  width: 90%;
+  flex-direction: column;
+  opacity: 0;
+  color:#fff;
+  font-size: 1rem;
+  align-items: center;
+  justify-content: space-around;
+  transition: 1s;
+}
+.project-text:hover{
+  opacity: 1;
+  transition: 1s;
+}
+.project-underline{
+  width: 100%;
+  height: 1px;
+  background: #fff;
+}
+
+.highlight-color{
+color:var(--highlight-color)
+}
+.project-text a {
+  text-decoration: none;
+  transition: 1s;
+}
+.project-text a:hover {
+ color: var(--dark-highlight-color);
+ transition: 1s;
+}
+
+.overlay{
+background: rgba(0, 0, 0, 0.65);
+opacity: 0;
+position: relative;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: 1s;
+/* margin: 10px; */
+}
+.overlay:hover{
+  /* background: rgba(0,0, 0, 0.1); */
+  opacity: 1;
+  transition: 1s;
+}
+.project-2{
+background: purple;
+}
+.project-3{
+background: blue;
+}
+.project-4{
+background: blue;
+}
+/* .se */
+
+
+
+
+
