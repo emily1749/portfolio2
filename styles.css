@@ -489,6 +489,7 @@ position: relative;
   align-items: center;
   justify-content: space-around;
   transition: 1s;
+  text-align: center;
 }
 .project-text:hover{
   opacity: 1;
