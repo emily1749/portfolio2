@@ -152,6 +152,32 @@ h2 {
   width: calc(100vw - 200px);
   /* background: pink; */
 }
+.main-content-container{
+  position: relative;
+  /* position: fixed; */
+  height: 100vh;
+  /* width: 100vw; */
+  top: 70px;
+  left: 200px;
+  height: calc(100vh - 140px);
+  width: calc(100vw - 250px);
+  /* background: pink; */
+}
+.main-container{
+  display: flex;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  /* background: red; */
+}
+
+
+.main-text h1{
+  font-weight: 900;
+  font-size: 6.6rem;
+  letter-spacing: 0.2rem;
+  }
 .content {
   position: absolute;
   display: flex;
@@ -215,6 +241,8 @@ h2 {
   letter-spacing: 0.2rem;
 }
 
+
+
 .content-AboutMe {
   /* background: black; */
   display: flex;
@@ -259,10 +287,19 @@ h2 {
   letter-spacing: 0.2rem;
 }
 
-.animate h1{
+.projects-text h1{
   font-weight: 800;
   font-size: 5rem;
 }
+
+/* position: fixed;
+font-weight: 800;
+font-size: 6rem;
+left: 20%;
+bottom: 50%;
+
+letter-spacing: 0.2rem; */
+
 
 .content h1 span, .animate h1 span {
   /* color: red;  */
@@ -321,13 +358,13 @@ h2 {
 .content h1 span:nth-child(9), .animate h1 span:nth-child(9) {
   animation-delay: -1s;
 }
-.content h1 span:nth-child(10) {
+.content h1 span:nth-child(10), .animate h1 span:nth-child(10)  {
   animation-delay: -0.95s;
 }
-.content h1 span:nth-child(11) {
+.content h1 span:nth-child(11), .animate h1 span:nth-child(11)  {
   animation-delay: -0.9s;
 }
-.content h1 span:nth-child(12) {
+.content h1 span:nth-child(12), .animate h1 span:nth-child(12)  {
   animation-delay: -0.85s;
 }
 
