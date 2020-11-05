@@ -264,16 +264,13 @@ h2 {
   /* top: 50%; */
 }
 .aboutMe {
-  padding: 0 100px;
+  position: absolute;
   background: #fff;
   border-radius: 20px;
-  padding: 40px 100px;
+  padding: 60px 70px;
   font-weight: 300;
-  line-height: 1.7rem;
-  margin: 0 4%;
-  height: 50%;
+  line-height: 1.9rem;
   text-align: left;
-  /* color: #fff; */
 }
 
 .content-AboutMe h1 {
