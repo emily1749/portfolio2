@@ -217,13 +217,15 @@ h2 {
   font-size: 5rem;
 }
 
-.content h1 span, .animate h1 span {
+.content h1 span, .animate h1 span{
   position: relative;
   display: inline-block;
   animation-name: animate;
   animation-duration: 4s;
   animation-delay: -1.4s;
 }
+
+
 
 /* Emily animation */
 
@@ -412,6 +414,7 @@ h2 {
   background-repeat:no-repeat;
   background-size: contain;
   position: relative;
+  border-radius: 10px;
 }
 
 
@@ -478,16 +481,17 @@ h2 {
 }
 
 .overlay{
-background: rgba(51, 51, 51, 0.87);
-position: relative;
-top: 0;
-left: 0;
-height: 100%;
-width: 100%;
-display: flex;
-align-items: center;
-justify-content: center;
-transition: 1s;
+  background: rgba(51, 51, 51, 0.87);
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1s;
+  border-radius: 10px;
 }
 
 .overlay:hover .hover-text{
@@ -502,4 +506,145 @@ transition: 1s;
 
 .tags {
   font-size: 1.4rem;
+}
+
+@media(max-width:1000px){
+  .navbar ul{
+    width: 700px;
+  }
+  .main-text h1{
+    font-size: 5rem;
+  }
+  .projects-text h1{
+    font-size: 4rem;
+  }
+  .aboutMe {
+  line-height: 1.5rem;
+  font-size: .9rem;
+  }
+  .tags {
+    font-size: 1rem;
+  }
+  .project-text {
+    font-size: .85rem;
+  }
+}
+
+@media (max-width: 760px){
+  .main-text h1{
+    font-size: 2rem;
+  }
+  .navbar h1{
+    /* height: 100%; */
+
+  }
+  .navbar ul {
+    width: 300px;
+    font-size: .7rem;
+    flex-direction: column;
+    /* height: 200px; */
+    width: 100%;
+    text-align: right;
+  }
+  .navbar {
+    height: 130px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .mail-bar {
+    /* background: red; */
+    flex-direction: row;
+    /* top: 0; */
+    /* left: 0; */
+    height: 250px;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+.mail-bar-1,
+.mail-bar-2 {
+  /* background: red; */
+  background: var(--main-font-color);
+  width: 37vw;
+  height: 1px;
+}
+
+.main {
+  width: 100%;
+  height: 250px;
+  left: 0;
+}
+.mail-space {
+  /* left: -5%; */
+  width: 0px;
+  height: 0px;
+}
+.main-content-container{
+  /* background: red; */
+  /* top: 0px; */
+  left: 5px;
+  height:(100vh - 200px);
+  width: 100vw;
+  text-align: center;
+}
+.main-container {
+  justify-content: center;
+}
+
+.projects-text h1{
+  font-size: 1.7rem;
+}
+.content-container{
+  top: 150px;
+  height: calc(100vh - 200px);
+  width: 90vw;
+  left: 0;
+  margin: 0 auto;
+}
+.aboutMe{
+  padding: 10px 10px;
+  border-radius: 10px;
+  font-size: .65rem;
+  line-height: .9rem;
+}
+
+.container-projects{
+  height: calc(100vh - 200px);
+  width: 90vw;
+  margin: 0 auto;
+  left: 0;
+  /* margin: 0; */
+}
+.tags {
+  font-size: .55rem;
+}
+.project-text {
+  font-size: .5rem;
+  /* margin: 0; */
+}
+.project {
+  margin: 1px;
+}
+.first-row {
+  height: 66%;
+}
+.second-row {
+  height: 34%;
+  width: 98%;
+}
+.first-row {
+  flex-wrap: wrap;
+}
+.project-2, .project-3{
+  width: 49%;
+}
+.project-1{
+  width: 98%;
+/* .main-content-container h1 {
+  text-align: center;
+} */
+
+}
 }
