@@ -17,7 +17,8 @@ p {
 
 body {
   overflow-x: hidden;
-  font-family: "Grandstander", sans-serif;
+  /* font-family: "Grandstander", sans-serif; */
+  font-family: "Boogaloo", sans-serif;
   background: var(--main-bg);
   color: var(--main-font-color);
 }
